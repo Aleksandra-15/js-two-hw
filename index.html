@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .box {
+        width: 250px;
+        height: 250px;
+        background: orange;
+        position: relative;
+      }
+    </style>
+    <input
+      type="text"
+      id="validation-input"
+      data-length="6"
+      placeholder="Введи 6 символів"
+    />
+    <p class="error"></p>
+    <input
+      type="text"
+      placeholder="Введіть текст"
+      id="validation-input1"
+      class="available"
+    />
+    <input
+      type="text"
+      placeholder="Введіть текст"
+      id="validation-input2"
+      class="missing"
+    />
+    <input id="font-size-control" type="range" />
+    <br />
+    <span id="text">Абракадабра!</span>
+    <button class="check">Перевірити</button>
+    <script src="./js/logic-operation.js"></script>
+  </body>
+</html>
