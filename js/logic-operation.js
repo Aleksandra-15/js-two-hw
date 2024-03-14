@@ -1,4 +1,4 @@
-/* //*Створити розмітку з двома текстовими полями та кнопкою. При натисканні на кнопку перевіряти, чи обидва поля містять значення, якщо так, то виводити повідомлення "Обидва поля заповнені", якщо ні — "Не всі поля заповнені".
+/*  //*Створити розмітку з двома текстовими полями та кнопкою. При натисканні на кнопку перевіряти, чи обидва поля містять значення, якщо так, то виводити повідомлення "Обидва поля заповнені", якщо ні — "Не всі поля заповнені".
 const inputText = document.querySelector("#validation-input1");
 const inputTextTwo = document.querySelector("#validation-input2");
 const checkBtn = document.querySelector(".check");
@@ -9,11 +9,11 @@ function checkInput() {
     alert("НЕ всі поля заповнені!!!");
   }
 }
-checkBtn.addEventListener("click", checkInput); */
+checkBtn.addEventListener("click", checkInput); 
 
 //*Зробити так щоб коли натискаєш на клавіші вгору вниз квадратик пересувався відповідно
 const box = document.querySelector(".box");
-/* let topPosition = box.offsetTop; */
+ let topPosition = box.offsetTop; 
 function translatePosition(event) {
   if (event.key === "ArrowBottom") {
     topPosition += 10;
@@ -40,3 +40,10 @@ inputText.addEventListener("blur", () => {
   }
 });
 
+ */
+//* Напиши скрипт, який реагує на зміну значення input#font-size-control (подія input) і змінює інлайн-стиль span#text оновлюючи властивість font-size. В результаті при перетягуванні повзунка змінюватиметься розмір тексту.
+const range = document.getElementById("font-size-control");
+const text = document.getElementById("text");
+range.addEventListener("input", () => {
+ text.style.fontSize = `${range.value}px`
+});

@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <body>
     <style>
       .box {
         width: 250px;
@@ -14,6 +12,35 @@
         position: relative;
       }
     </style>
+  </head>
+  <body>
+    <form action="">
+      <input
+        type="text"
+        placeholder="Введіть текст"
+        id="validation"
+        class="missing"
+      /><select name="days-week" id="day">
+        <option value="monday" id="monday">понеділок</option>
+        <option value="thutdey" id="thutdey">вівторок</option>
+        <option value="wensday" id="wensday">середа</option>
+        <option value="thurthday" id="thurthday">четвер</option>
+        <option value="friday" id="friday">п'ятниця</option>
+        <option value="sutaeday" id="sutaeday">субота</option>
+        <option value="sunday" id="sunday">неділя</option>
+      </select>
+      <button class="check-day"></button>
+    </form>
+    <form>
+      <label value="">Виберіть напій:</label>
+      <select name="variants" id="choose">
+        <option value="coffee" id="coffee">Кава</option>
+        <option value="tea" id="tea">Чай</option>
+        <option value="juice" id="juice">Сік</option>
+      </select>
+    </form>
+    <div class="message"></div>
+
     <input
       type="text"
       id="validation-input"
@@ -27,16 +54,13 @@
       id="validation-input1"
       class="available"
     />
-    <input
-      type="text"
-      placeholder="Введіть текст"
-      id="validation-input2"
-      class="missing"
-    />
+
     <input id="font-size-control" type="range" />
     <br />
     <span id="text">Абракадабра!</span>
     <button class="check">Перевірити</button>
+
     <script src="./js/logic-operation.js"></script>
+    <script src="./js/branching.js"></script>
   </body>
 </html>
